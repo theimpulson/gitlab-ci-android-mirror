@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 # Global Android command-line tools from https://developer.android.com/studio
 ARG ANDROID_CMDLINE_TOOLS_VERSION=11076708
@@ -20,7 +20,7 @@ ENV ANDROID_SDK_ROOT "/sdk"
 ENV ANDROID_HOME "/sdk"
 ARG ANDROID_CMDLINE_TOOLS_BIN="${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin"
 
-# Add Gradle and SDK tools to the PATH
+# Add SDK tools to the PATH
 ENV PATH "$PATH:${ANDROID_CMDLINE_TOOLS_BIN}/:${ANDROID_HOME}/emulator/:${ANDROID_HOME}/platform-tools/:${ANDROID_HOME}/build-tools/34.0.0/"
 
 # Setup distribution and install required distribution packages
