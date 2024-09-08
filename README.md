@@ -6,8 +6,8 @@ This Docker image is a fork of [jangrewe/gitlab-ci-android](https://github.com/j
 
 - Ubuntu: `22.04`
 - JDK: `17`
-- Android command-line tools: `10406996`
-- Android build tools & platform: `API 34`
+- Android command-line tools: `11076708`
+- Android build tools & platform: `API 35`
 
 ## Building Apps
 
