@@ -15,7 +15,7 @@ ARG ANDROID_CMDLINE_TOOLS_BIN="${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin"
 ENV PATH "$PATH:${ANDROID_CMDLINE_TOOLS_BIN}/:${ANDROID_HOME}/emulator/:${ANDROID_HOME}/platform-tools/:${ANDROID_HOME}/build-tools/35.0.0/"
 
 # Setup distribution and install required distribution packages
-ARG JDK_VERSION=17
+ARG JDK_VERSION=21
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN dpkg --print-architecture && \
